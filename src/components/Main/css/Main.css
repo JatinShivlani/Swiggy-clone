@@ -1,0 +1,428 @@
+*{
+    scroll-behavior: smooth;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    font-family: "Basis Grotesque";
+
+}
+hr{
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+.horizontal-line-break{
+    border: 1px solid rgb(240, 240, 245);
+    margin: 32px calc(10% + 52px);
+}
+.online-heading{
+    margin: 0px calc(10% + 52px);
+    font-family: 'Basis Grotesque b';
+}
+.removePadding{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.common-margin{
+    margin-left: calc(10% + 36px);
+    margin-right: calc(10% + 36px);
+}
+.best-offer-container{
+    margin-top: 16px;
+}
+.common-container{
+    position: relative;
+}
+.arrow-btn{
+    display: flex;
+    position: absolute;
+    margin-top: 12px;
+    right: 16px;
+}
+.left-arrow[disabled]{
+    opacity: 0.5;
+}
+.arrow{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.arrow-container{
+    border-radius: 100%;
+    padding: 8px 8px 4px;
+    background: rgb(226, 226, 231);
+}
+.left-arrow-container{
+    margin-right: 16px;
+}
+.main-content{
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    overflow: hidden;
+}
+.heading-content{
+    background: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    overflow: hidden;
+    font-family: 'Basis Grotesque b';
+}
+.content-text{
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: -0.4px;
+    color: rgba(2, 6, 12, 0.92);
+    overflow: hidden;
+    width: 100%;
+}
+.scroller{
+    overflow: scroll hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+    scroll-behavior: smooth;
+}
+div::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    display: flex;
+    padding-top: 0px;
+    
+}
+
+.scroller-img-bo{
+    padding-right: 16px;
+}
+.scroller-img-woym{
+    padding-right: 24px;
+}
+.scroller-img-tr{
+    padding-right: 32px;
+    padding-left: 16px;
+    transition: all 0.1s;
+}
+.scroller-img-tr:hover{
+    transform: scale(95%);
+}
+.img-first{
+    padding-left: 16px;
+}
+.link-tr{
+    text-decoration: none;
+    color: inherit;
+    outline: 0px;
+    cursor: pointer;
+    display: block;
+    width: 19.5rem;
+    height: auto;
+}
+.item-grid-container{
+    display: grid;
+    gap: 12px;
+    grid-auto-flow: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0px;
+}
+.removeWidth{
+    width: 100%;
+}
+.grid-img-container{
+    position: relative;
+}
+.grid-img-container::before{
+    content: "";
+    height: 0px;
+    display: block;
+    padding-top: calc(66.6667%);
+}
+.img-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
+
+}
+.star{
+    filter: sepia(0.3);
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offer-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: grid;
+    align-content: end;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    height: calc(81px);
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+}
+.offer-text{
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    font-family: "ProximaNovaCond-Black";
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: rgba(255, 255, 255, 0.92);
+    overflow: hidden;
+    width: 100%;
+    
+}
+.restaurent-name{
+    font-family: "Basis Grotesque";
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.restaurent-rating{
+    display: grid;
+    align-items: center;
+    margin-top: 2px;
+    gap: 2px;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+.rating-points{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+
+}
+.restaurent-descriptions-container{
+    font-family: "Basis Grotesque";
+    display: grid;
+    align-items: center;
+    margin-top: 2px;
+    gap: 2px;
+}
+.description-text{
+    font-family: "Basis Grotesque l";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.scrollBar{
+    margin-left: auto;
+    margin-right: auto;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    background-color: rgb(240, 240, 245);
+    width: 48px;
+    margin-top: 15px;
+}
+.redPart{
+    content: "";
+    background-color: rgb(241, 87, 0);
+    position: absolute;
+    border-radius: 2px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: calc(19.5%);
+}
+.gap16px{
+    height: 16px;
+}
+
+.online-grid-box{
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    display: grid;
+    -webkit-box-align: start;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin: 32px 16px;
+    width: 100%;
+}
+.best-res-container{
+    margin-left: calc(6% + 8px);
+    margin-right: calc(6% + 8px);
+
+}
+.best-res-heading{
+    padding-left: 16px;
+}
+.best-res-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.best-res-link{
+    text-decoration: none;
+    color: inherit;
+    outline: 0px;
+    flex: 1 1 20%;
+    margin: 0px 16px 16px;
+}
+.best-res-item{
+    padding: 16px;
+    box-sizing: border-box;
+    border: 1.5px solid rgba(2, 6, 12, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+.best-res-item-content{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.darkText,.svg-best-res{
+    font-weight: 700;
+}
+.gap64px{
+    height: 64px;
+}
+.download-flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 104px;
+    background-color: rgb(240, 240, 245);
+    margin-top: 34px;
+}
+.download-text{
+    display: block;
+    width: 408px;
+    margin: auto 96px auto 0px;
+    max-height: 64px;
+}
+.download-images{
+    margin: auto 8px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.ios,.android{
+    height: 64px;
+    margin: auto 12px;
+    width: auto;
+}
+.google-play-store,.apple-app-store{
+    height: 64px;
+    max-width: 208px;
+
+}
+.download-heading-text{
+    font-family: 'Basis Grotesque b';
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: rgba(2, 6, 12, 0.75);
+}
+.footer-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5%;
+    display: grid;
+    background-color: rgb(2, 6, 12);
+    padding: 0px 17.5% 7rem;
+}
+.footer-image{
+    grid-area: 1 / 1 / 5 / auto;
+    margin-top: 48px;
+}
+.footer-image-container{
+    display: flex;
+    margin-bottom: 8px;
+
+}
+.svg-image-footer{
+    margin-top: -4px;
+    margin-right: 8px;
+}
+.footer-text{
+    -webkit-font-smoothing: antialiased;
+    font-family: "Basis Grotesque l";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-ul{
+   -webkit-box-pack: center; 
+}
+.footer-ul:nth-child(4){
+    grid-column-start: 3;
+    margin-top: calc(-7rem);
+}
+.footer-ul:last-child{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    margin-top: 0px;
+}
+ul{
+    list-style: none;
+}
+.heading-li{
+    margin-top: calc(48px);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}.li-item{
+    margin: 16px 0px;
+}
+.last-li-item{
+    margin-bottom: 0px;
+}
